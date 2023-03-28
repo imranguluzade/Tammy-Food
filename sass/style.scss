@@ -665,159 +665,17 @@ label {
 
 ///-------------- MEDIA QUERIES ----------///
 
-@media (max-width: 320px) {
-  .menu {
-    display: inline-block;
-  }
-  .navbar .navbar-lists {
-    display: none;
-  }
-  header {
-    height: 50vh;
-    background-image: none;
-  }
-  .header-box {
-    margin-top: 50px;
-    .header-info {
-      gap: 20px;
-    }
-  }
-  .menu {
-    display: inline-block;
-  }
-  .navbar .navbar-lists {
-    display: none;
-  }
-  .header-box-header {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .header-box-paragraph {
-    font-size: 12px;
-    line-height: 1.5rem;
-  }
-
-  .helper-btn {
-    width: 6.5rem;
-  }
-  .main-btn {
-    width: 7rem;
-    font-size: 1rem;
-  }
-  .more-info-link {
-    font-size: 0.8rem;
-  }
-  .info-section {
-    margin-top: 5rem;
-  }
-  .info-boxes .boxes-title {
-    width: 70%;
-    margin: 0 auto;
-  }
-  .info-section-box {
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    .vector-1,
-    .vector-2 {
-      display: none;
-    }
-    .absolut {
-      margin: 0;
-    }
-  }
-  .foods {
-    margin-top: 5rem;
-  }
-  .food-container-title {
-    width: 70%;
-    margin: 0 auto;
-  }
-  .foods-menu-cards {
-    margin-top: 2rem;
-  }
-  .food-container .pagination {
-    margin-top: 2rem;
-  }
-  .target {
-    margin-top: 5rem;
-    .target-box {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      gap: 50px;
-      .target-image img {
-        width: 80%;
-      }
-    }
-  }
-  .advertise {
-    margin-top: 5rem;
-    .advertise-container {
-      flex-direction: column-reverse;
-      img {
-        width: 50%;
-      }
-      .app-download {
-        display: flex;
-        gap: 50px;
-        width: 100%;
-        img {
-          width: 100%;
-        }
-      }
-    }
-  }
-  footer{
-    .contact-number-mail{
-      flex-direction: column;
-      a {
-        font-size: 1rem;
-
-      }
-    }
-    .footer-container{
-      flex-direction: column;
-      gap: 100px;
-      align-items: flex-start;
-      .social-media{
-        width: 100%;
-        .social-logos{
-          .social-logo{
-            padding-right: 50px;
-          }
-        }
-      }
-      .quick-link{
-        width: 100%;
-      }
-      .subscribe{
-        width: 100%;
-        gap: 20px;
-      }
-    }
+@media (max-width: 1280px) {
+  header{
+    height: 100vh;
   }
 }
 
-
-@media (max-width: 576px) {
-  header {
-    height: 50vh;
-    background-image: none;
-  }
-  .header-box {
-    margin-top: 50px;
-    .header-info {
-      gap: 20px;
-    }
-  }
-  .header-info{
-    width: 100%;
+@media (max-width: 992px) {
+  header{
+    height: 90vh;
+    background-position-y: 60%;
+    background-size: 50%;
   }
   .menu {
     display: inline-block;
@@ -825,129 +683,36 @@ label {
   .navbar .navbar-lists {
     display: none;
   }
-  .header-box-header {
-    font-size: 1.5rem;
-    line-height: 2rem;
+  .vector-1,
+  .vector-2 {
+    display: none;
   }
-  .header-box-paragraph {
-    font-size: 12px;
-    line-height: 1.5rem;
-  }
-
-  .helper-btn {
-    width: 6.5rem;
-  }
-  .main-btn {
-    width: 7rem;
-    font-size: 1rem;
-  }
-  .more-info-link {
-    font-size: 0.8rem;
-  }
-  .info-section {
-    margin-top: 5rem;
-  }
-  .info-boxes .boxes-title {
-    width: 70%;
-    margin: 0 auto;
-  }
-  .info-section-box {
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
+  .target-box {
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    .vector-1,
-    .vector-2 {
-      display: none;
-    }
-    .absolut {
-      margin: 0;
+    gap: 20px;
+    .target-info {
+      padding-bottom: 20px;
     }
   }
-  .foods {
-    margin-top: 5rem;
+  .advertise .advertise-container {
+    flex-direction: column-reverse;
   }
-  .food-container-title {
-    width: 70%;
-    margin: 0 auto;
-  }
-  .foods-menu-cards {
-    margin-top: 2rem;
-  }
-  .food-container .pagination {
-    margin-top: 2rem;
-  }
-  .target {
-    margin-top: 5rem;
-    .target-box {
-      width: 100%;
-      display: flex;
+  footer {
+    .contact-number-mail {
       flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      gap: 50px;
-      .target-image img {
-        width: 80%;
-      }
     }
   }
-  .advertise {
-    margin-top: 5rem;
-    .advertise-container {
-      flex-direction: column-reverse;
-      img {
-        width: 50%;
-      }
-      .app-download {
-        display: flex;
-        gap: 50px;
-        width: 100%;
-        img {
-          width: 100%;
-        }
-      }
+  .social-logos {
+    .social-logo {
+      border: 0 !important;
     }
   }
-  footer{
-    .contact-number-mail{
-      flex-direction: column;
-      a {
-        font-size: 1rem;
-
-      }
-    }
-    .footer-container{
-      flex-direction: column;
-      gap: 100px;
-      align-items: flex-start;
-      .social-media{
-        width: 100%;
-        .social-logos{
-          .social-logo{
-            padding-right: 50px;
-          }
-        }
-      }
-      .quick-link{
-        width: 100%;
-      }
-      .subscribe{
-        width: 100%;
-        gap: 20px;
-      }
-    }
+  .footer-input{
+    padding-left: 5px;
   }
 }
 
 @media (max-width: 768px) {
-  .menu {
-    display: inline-block;
-  }
-  .navbar .navbar-lists {
-    display: none;
-  }
   header {
     height: 50vh;
     background-repeat: no-repeat;
@@ -1024,6 +789,9 @@ label {
   .target {
     margin-top: 5rem;
     .target-box {
+      .target-info {
+        padding-bottom: 20px;
+      }
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -1052,30 +820,175 @@ label {
       }
     }
   }
-  footer{
-    .contact-number-mail{
+  footer {
+    .contact-number-mail {
       flex-direction: column;
       a {
         font-size: 1rem;
-
       }
     }
-    .footer-container{
+    .footer-container {
       flex-direction: column;
       gap: 100px;
       align-items: flex-start;
-      .social-media{
+      .social-media {
         width: 100%;
-        .social-logos{
-          .social-logo{
-            padding-right: 50px;
+        .social-logos {
+          .social-logo {
+            border: 0;
           }
         }
       }
-      .quick-link{
+      .quick-link {
         width: 100%;
       }
-      .subscribe{
+      .subscribe {
+        width: 100%;
+        gap: 20px;
+      }
+    }
+    label {
+      justify-content: flex-start;
+      .footer-input {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    height: 70vh;
+    background-image: none;
+  }
+  .header-box {
+    margin-top: 50px;
+    .header-info {
+      gap: 20px;
+    }
+  }
+  .header-info {
+    width: 100%;
+  }
+  .menu {
+    display: inline-block;
+  }
+  .navbar .navbar-lists {
+    display: none;
+  }
+  .header-box-header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .header-box-paragraph {
+    font-size: 12px;
+    line-height: 1.5rem;
+  }
+
+  .helper-btn {
+    width: 6.5rem;
+  }
+  .main-btn {
+    width: 7rem;
+    font-size: 1rem;
+  }
+  .more-info-link {
+    font-size: 0.8rem;
+  }
+  .info-section {
+    margin-top: 5rem;
+  }
+  .info-boxes .boxes-title {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .info-section-box {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .vector-1,
+    .vector-2 {
+      display: none;
+    }
+    .absolut {
+      margin: 0;
+    }
+  }
+  .foods {
+    margin-top: 5rem;
+  }
+  .food-container-title {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .foods-menu-cards {
+    margin-top: 2rem;
+  }
+  .food-container .pagination {
+    margin-top: 2rem;
+    gap: 5px;
+  }
+  .target {
+    margin-top: 5rem;
+    .target-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+      .target-info {
+        padding-bottom: 10px;
+      }
+      .target-image img {
+        width: 80%;
+      }
+    }
+  }
+  .advertise {
+    margin-top: 5rem;
+    .advertise-container {
+      flex-direction: column-reverse;
+      img {
+        width: 50%;
+      }
+      .app-download {
+        display: flex;
+        gap: 50px;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  footer {
+    .contact-number-mail {
+      padding: 20px 20px;
+      flex-direction: column;
+      a {
+        font-size: 1rem;
+      }
+    }
+    .footer-container {
+      flex-direction: column;
+      gap: 100px;
+      align-items: flex-start;
+      .social-media {
+        width: 100%;
+        .social-logos {
+          .social-logo {
+            border: 0;
+          }
+        }
+      }
+      .quick-link {
+        width: 100%;
+      }
+      .subscribe {
         width: 100%;
         gap: 20px;
       }
@@ -1083,7 +996,144 @@ label {
   }
 }
 
-@media (max-width: 992px) {
-}
-@media (max-width: 1200px) {
+@media (max-width: 320px) {
+  .menu {
+    display: inline-block;
+  }
+  .navbar .navbar-lists {
+    display: none;
+  }
+  header {
+    height: 100vh;
+    background-image: none;
+  }
+  .header-box {
+    margin-top: 50px;
+    .header-info {
+      gap: 20px;
+    }
+  }
+  .menu {
+    display: inline-block;
+  }
+  .navbar .navbar-lists {
+    display: none;
+  }
+  .header-box-header {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .header-box-paragraph {
+    font-size: 12px;
+    line-height: 1.5rem;
+  }
+
+  .helper-btn {
+    width: 6.5rem;
+  }
+  .main-btn {
+    width: 7rem;
+    font-size: 1rem;
+  }
+  .more-info-link {
+    font-size: 0.8rem;
+  }
+  .info-section {
+    margin-top: 5rem;
+  }
+  .info-boxes .boxes-title {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .info-section-box {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .vector-1,
+    .vector-2 {
+      display: none;
+    }
+    .absolut {
+      margin: 0;
+    }
+  }
+  .foods {
+    margin-top: 5rem;
+  }
+  .food-container-title {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .foods-menu-cards {
+    margin-top: 2rem;
+  }
+  .food-container .pagination {
+    margin-top: 2rem;
+    gap: 3px;
+  }
+  .target {
+    margin-top: 5rem;
+    .target-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+      .target-info {
+        padding-bottom: 10px;
+      }
+      .target-image img {
+        width: 80%;
+      }
+    }
+  }
+  .advertise {
+    margin-top: 5rem;
+    .advertise-container {
+      flex-direction: column-reverse;
+      img {
+        width: 50%;
+      }
+      .app-download {
+        display: flex;
+        gap: 50px;
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  footer {
+    .contact-number-mail {
+      flex-direction: column;
+      a {
+        font-size: 1rem;
+      }
+    }
+    .footer-container {
+      flex-direction: column;
+      gap: 100px;
+      align-items: flex-start;
+      .social-media {
+        width: 100%;
+        .social-logos {
+          .social-logo {
+            border: 0;
+          }
+        }
+      }
+      .quick-link {
+        width: 100%;
+      }
+      .subscribe {
+        width: 100%;
+        gap: 20px;
+      }
+    }
+  }
 }
